@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Counter</title>
+        <link rel="stylesheet" href="counter.css">
+        <script src="https://kit.fontawesome.com/f0fde02fb1.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+    background-color: #db10ca;
+}
+.content{
+    height: 300px;
+    width: 500px;
+    border: 10px solid rgb(12, 182, 26);
+    margin: auto;
+    margin-top: 50px;
+    background-color: #7753f8;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.data1{
+    height: 25px;
+    width: 495px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+.data2{
+    height: 50px;
+    width: 100px;
+    margin-top: 50xp;
+    margin-left: 125px;
+}
+.data3{
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+    </style>
+    <body>
+        <h1>Counter</h1>
+        <form class="content">
+            <!--input type="submit" onclick="this.disabled = true" value="Save" -->
+            <p><input type="text" name="myfield" value="0" size="5" readonly="readonly" class="data1"></p><br>
+            <input type="button" value="Like!" onclick="addone(myfield);" onclick="this.disabled = true" class="data2"> 
+            <i class="fas fa-thumbs-up"></i>
+            <input type="button" value="Unlike!" onclick="subtractone(myfield);" class="data3">
+            <i class="fas fa-thumbs-down"></i><br>
+        </form>
+        <script src="counter.js"></script>
+    </body>
+</html>
